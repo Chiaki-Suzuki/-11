@@ -215,6 +215,10 @@
   .simulation .step2box li p.course-title {
     top: -35px;
   }
+  .sum h4 {
+    font-size: 18px;
+    padding: 5px;
+  }
   .switch__content::before {
     top: 0;
   }

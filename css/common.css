@@ -738,6 +738,13 @@ table.senior tr {
   outline: 8px solid #fff;
 }
 
+.sum h4 span {
+  display: inline-block;
+  font-size: 24px;
+  color: #ff8181;
+  margin: 0 3px 0 5px;
+}
+
 /* オプションチェック */
 .simulation .step2box li label {
   cursor: pointer;

@@ -474,13 +474,13 @@
                         <li class="color1" v-if="course1">
                             <p class="course-title">course1</p>
                             <p>毛の長さ</p>
-                            <select>
+                            <select v-model="course1Hair">
                                 <option value="noselect">選択してください</option>
                                 <option value="0">短毛</option>
                                 <option value="1">長毛</option>
                             </select>
                             <p>体重</p>
-                            <select>
+                            <select v-model="course1weight" @change="totalPrice">
                                 <option value="noselect">選択してください</option>
                                 <option value="0">3kg以下</option>
                                 <option value="1">4kg~7kg以下</option>
@@ -488,19 +488,19 @@
                             </select>
                             <p>オプション追加</p>
                             <label class="btn active" for="o1">
-                                <input id="o1" type="checkbox"><i class="fa fa-check-square-o fa-2x"></i>
+                                <input id="o1" type="checkbox" v-model="course1Option" @change="totalPrice"><i class="fa fa-check-square-o fa-2x"></i>
                                 <span>抜け毛・毛玉処理</span>
                             </label>
                         </li>
                         <li class="color2" v-if="course2">
                             <p class="course-title">course2</p>
                             <p>毛の長さ</p>
-                            <select>
+                            <select v-model="course2Hair">
                                 <option value="noselect">選択してください</option>
                                 <option value="0">短毛</option>
                             </select>
                             <p>体重</p>
-                            <select>
+                            <select v-model="course2weight" @change="totalPrice">
                                 <option value="noselect">選択してください</option>
                                 <option value="0">3kg以下</option>
                                 <option value="1">4kg~7kg以下</option>
@@ -508,14 +508,14 @@
                             </select>
                             <p>オプション追加</p>
                             <label class="btn active" for="o2">
-                                <input id="o2" type="checkbox"><i class="fa fa-check-square-o fa-2x"></i>
+                                <input id="o2" type="checkbox" v-model="course2Option" @change="totalPrice"><i class="fa fa-check-square-o fa-2x"></i>
                                 <span>抜け毛・毛玉処理</span>
                             </label>
                         </li>
                         <li class="color3" v-if="course3">
                             <p class="course-title">course3</p>
                             <p>メニュー</p>
-                            <select>
+                            <select v-model="course3menu" @change="totalPrice">
                                 <option value="noselect">選択してください</option>
                                 <option value="0">シャンプー・カットなし</option>
                                 <option value="1">シャンプー無し・カットあり</option>
@@ -526,14 +526,14 @@
                             <p class="course-title">course4</p>
                             <p>オプション追加</p>
                             <label class="btn active" for="o4">
-                                <input id="o4" type="checkbox"><i class="fa fa-check-square-o fa-2x"></i>
+                                <input id="o4" type="checkbox" v-model="course4Option" @change="totalPrice"><i class="fa fa-check-square-o fa-2x"></i>
                                 <span>『困ったにゃん』コース</span>
                             </label>
                         </li>
                     </ul>
                 </div>
                 <div class="sum">
-                    <h4 class="font-digital">合計<span></span>円</h4>
+                    <h4 class="font-digital">合計<span>{{ price }}</span>円</h4>
                 </div>
             </div>
         </div>
