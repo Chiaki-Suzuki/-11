@@ -629,12 +629,18 @@ table.senior tr {
 .simulation .step1box li,
 .simulation .step2box li {
   position: relative;
-  width: 23%;
+  width: 100%;
   border: 3px solid #976546;
   border-radius: 5px;
   padding: 20px;
+  margin: 0 10px 0 0;
   box-sizing: border-box;
   background: #fbf5f2;
+}
+
+.simulation .step1box li:last-of-type,
+.simulation .step2box li:last-of-type {
+  margin: 0 0 0 0;
 }
 
 .simulation .step1box li {
@@ -652,15 +658,30 @@ table.senior tr {
 .simulation .step1box li p span::after {
   content: '';
   display: block;
-  width: 20px;
-  height: 3px;
+  width: 25px;
+  height: 4px;
   background-color: #ff8181;
   margin: 3px auto;
 }
+.simulation .step1box li:nth-of-type(1) p span::after {
+  content: '';
+  background-color: #fda1ba;
+}
+.simulation .step1box li:nth-of-type(3) p span::after {
+  content: '';
+  background-color: #ffbb77;
+}
+.simulation .step1box li:nth-of-type(4) p span::after {
+  content: '';
+  background-color: #ffd73c;
+}
 
 .simulation .step2box li {
-  margin: 40px 0 0 0;
+  margin: 40px 10px 0 0;
   text-align: left;
+}
+.simulation .step2box li:last-of-type {
+  margin: 40px 0 0 0;
 }
 
 .simulation .step2box li p.course-title {
@@ -690,9 +711,21 @@ table.senior tr {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: #f7b9ca;
+  background-color: #ff8181;
   border-radius: 3px;
   margin: 0 5px 0 0;
+}
+.simulation .step2box li.color1 p:not(.course-title)::before {
+  content: '';
+  background-color: #fda1ba;
+}
+.simulation .step2box li.color3 p:not(.course-title)::before {
+  content: '';
+  background-color: #ffbb77;
+}
+.simulation .step2box li.color4 p:not(.course-title)::before {
+  content: '';
+  background-color: #ffd73c;
 }
 
 .sum h4 {
@@ -752,7 +785,7 @@ table.senior tr {
   position: relative;
   border-radius: 50em;
   height: 24px;
-  background-color: rgba(34,31,31,.26);
+  background-color: rgb(143 143 143 / 26%);
 	transition: all .1s .3s;
 	overflow: hidden;
 }
@@ -761,7 +794,7 @@ table.senior tr {
   content: '不要';
   position: absolute;
   font-size: 13px;
-  color: #333;
+  color: #aaa;
   top: 3px;
 }
 

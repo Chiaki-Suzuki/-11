@@ -405,122 +405,136 @@
           </div>
         </div>
         <!-- 料金シミュレーション -->
-        <div class="simulation">
-            <h3 class="font-digital">料金シミュレーション</h3>
-            <p>ご希望の内容をお選びください。</p>
-            <div class="step">
-                <h4 class="font-digital"><span>STEP1</span>コース選択</h4>
-                <p>必要なコースを選択してください。</p>
-                <ul class="step1box">
-                    <li>
-                        <p><span>course1</span>シャンプーコース</p>
-                        <div class="switch">
-                            <label for="s1" class="switch__label">
-                                <input id="s1" type="checkbox" class="switch__input">
-                                <span class="switch__content"></span>
-                                <span class="switch__circle"></span>
+        <div id="app">
+            <div class="simulation">
+                <h3 class="font-digital">料金シミュレーション</h3>
+                <p>ご希望の内容をお選びください。</p>
+                <div class="step">
+                    <h4 class="font-digital"><span>STEP1</span>コース選択</h4>
+                    <p>必要なコースを選択してください。</p>
+                    <ul class="step1box">
+                        <li>
+                            <p><span>course1</span>シャンプーコース</p>
+                            <div class="switch">
+                                <label for="s1" class="switch__label">
+                                    <input type="checkbox"
+                                        id="s1"
+                                        class="switch__input"
+                                        v-model="course1">
+                                    <span class="switch__content"></span>
+                                    <span class="switch__circle"></span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <p><span>course2</span>トリミングコース</p>
+                            <div class="switch">
+                                <label for="s2" class="switch__label">
+                                    <input type="checkbox"
+                                        id="s2"
+                                        class="switch__input"
+                                        v-model="course2">
+                                    <span class="switch__content"></span>
+                                    <span class="switch__circle"></span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <p><span>course3</span>シニアトリミング・<br>グルーミングコース</p>
+                            <div class="switch">
+                                <label for="s3" class="switch__label">
+                                    <input type="checkbox"
+                                        id="s3"
+                                        class="switch__input"
+                                        v-model="course3">
+                                    <span class="switch__content"></span>
+                                    <span class="switch__circle"></span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <p><span>course4</span>麻酔無しで行う<br>『困ったにゃん』コース</p>
+                            <div class="switch">
+                                <label for="s4" class="switch__label">
+                                    <input type="checkbox"
+                                        id="s4"
+                                        class="switch__input"
+                                        v-model="course4">
+                                    <span class="switch__content"></span>
+                                    <span class="switch__circle"></span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <h4 class="font-digital"><span>STEP2</span>情報入力</h4>
+                    <p>猫ちゃんの状態や追加オプションを選択してください。</p>
+                    <ul class="step2box">
+                        <li class="color1" v-if="course1">
+                            <p class="course-title">course1</p>
+                            <p>毛の長さ</p>
+                            <select>
+                                <option value="noselect">選択してください</option>
+                                <option value="0">短毛</option>
+                                <option value="1">長毛</option>
+                            </select>
+                            <p>体重</p>
+                            <select>
+                                <option value="noselect">選択してください</option>
+                                <option value="0">3kg以下</option>
+                                <option value="1">4kg~7kg以下</option>
+                                <option value="2">7kg以上</option>
+                            </select>
+                            <p>オプション追加</p>
+                            <label class="btn active" for="o1">
+                                <input id="o1" type="checkbox"><i class="fa fa-check-square-o fa-2x"></i>
+                                <span>抜け毛・毛玉処理</span>
                             </label>
-                        </div>
-                    </li>
-                    <li>
-                        <p><span>course2</span>トリミングコース</p>
-                        <div class="switch">
-                            <label for="s2" class="switch__label">
-                                <input id="s2" type="checkbox" class="switch__input">
-                                <span class="switch__content"></span>
-                                <span class="switch__circle"></span>
+                        </li>
+                        <li class="color2" v-if="course2">
+                            <p class="course-title">course2</p>
+                            <p>毛の長さ</p>
+                            <select>
+                                <option value="noselect">選択してください</option>
+                                <option value="0">短毛</option>
+                            </select>
+                            <p>体重</p>
+                            <select>
+                                <option value="noselect">選択してください</option>
+                                <option value="0">3kg以下</option>
+                                <option value="1">4kg~7kg以下</option>
+                                <option value="2">7kg以上</option>
+                            </select>
+                            <p>オプション追加</p>
+                            <label class="btn active" for="o2">
+                                <input id="o2" type="checkbox"><i class="fa fa-check-square-o fa-2x"></i>
+                                <span>抜け毛・毛玉処理</span>
                             </label>
-                        </div>
-                    </li>
-                    <li>
-                        <p><span>course3</span>シニアトリミング・<br>グルーミングコース</p>
-                        <div class="switch">
-                            <label for="s3" class="switch__label">
-                                <input id="s3" type="checkbox" class="switch__input">
-                                <span class="switch__content"></span>
-                                <span class="switch__circle"></span>
+                        </li>
+                        <li class="color3" v-if="course3">
+                            <p class="course-title">course3</p>
+                            <p>メニュー</p>
+                            <select>
+                                <option value="noselect">選択してください</option>
+                                <option value="0">シャンプー・カットなし</option>
+                                <option value="1">シャンプー無し・カットあり</option>
+                                <option value="2">シニアわんトリミング シャンプー＆カット</option>
+                            </select>
+                        </li>
+                        <li class="color4" v-if="course4">
+                            <p class="course-title">course4</p>
+                            <p>オプション追加</p>
+                            <label class="btn active" for="o4">
+                                <input id="o4" type="checkbox"><i class="fa fa-check-square-o fa-2x"></i>
+                                <span>『困ったにゃん』コース</span>
                             </label>
-                        </div>
-                    </li>
-                    <li>
-                        <p><span>course4</span>麻酔無しで行う<br>『困ったにゃん』コース</p>
-                        <div class="switch">
-                            <label for="s4" class="switch__label">
-                                <input id="s4" type="checkbox" class="switch__input">
-                                <span class="switch__content"></span>
-                                <span class="switch__circle"></span>
-                            </label>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="step">
-                <h4 class="font-digital"><span>STEP2</span>情報入力</h4>
-                <p>猫ちゃんの状態や追加オプションを選択してください。</p>
-                <ul class="step2box">
-                    <li>
-                        <p class="course-title">course1</p>
-                        <p>毛の長さ</p>
-                        <select>
-                            <option value="noselect">選択してください</option>
-                            <option value="0">短毛</option>
-                            <option value="1">長毛</option>
-                        </select>
-                        <p>体重</p>
-                        <select>
-                            <option value="noselect">選択してください</option>
-                            <option value="0">3kg以下</option>
-                            <option value="1">4kg~7kg以下</option>
-                            <option value="2">7kg以上</option>
-                        </select>
-                        <p>オプション追加</p>
-                        <label class="btn active" for="o1">
-                            <input id="o1" type="checkbox"><i class="fa fa-check-square-o fa-2x"></i>
-                            <span>抜け毛・毛玉処理</span>
-                        </label>
-                    </li>
-                    <li>
-                        <p class="course-title">course2</p>
-                        <p>毛の長さ</p>
-                        <select>
-                            <option value="noselect">選択してください</option>
-                            <option value="0">短毛</option>
-                        </select>
-                        <p>体重</p>
-                        <select>
-                            <option value="noselect">選択してください</option>
-                            <option value="0">3kg以下</option>
-                            <option value="1">4kg~7kg以下</option>
-                            <option value="2">7kg以上</option>
-                        </select>
-                        <p>オプション追加</p>
-                        <label class="btn active" for="o2">
-                            <input id="o2" type="checkbox"><i class="fa fa-check-square-o fa-2x"></i>
-                            <span>抜け毛・毛玉処理</span>
-                        </label>
-                    </li>
-                    <li>
-                        <p class="course-title">course3</p>
-                        <p>メニュー</p>
-                        <select>
-                            <option value="noselect">選択してください</option>
-                            <option value="0">シャンプー・カットなし</option>
-                            <option value="1">シャンプー無し・カットあり</option>
-                            <option value="2">シニアわんトリミング シャンプー＆カット</option>
-                        </select>
-                    </li>
-                    <li>
-                        <p class="course-title">course4</p>
-                        <p>オプション追加</p>
-                        <label class="btn active" for="o4">
-                            <input id="o4" type="checkbox"><i class="fa fa-check-square-o fa-2x"></i>
-                            <span>『困ったにゃん』コース</span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <div class="sum">
-                <h4 class="font-digital">合計<span></span>円</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sum">
+                    <h4 class="font-digital">合計<span></span>円</h4>
+                </div>
             </div>
         </div>
         <!-- 注意事項 -->
@@ -662,6 +676,8 @@
       <p>Copyright 2017 Feilien 無麻酔出張トリミング・猫ちゃん＆シニア専門</p>
     </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="js/main.js"></script>
 </html>
 <script>
   bubbly({
