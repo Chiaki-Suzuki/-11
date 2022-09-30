@@ -474,7 +474,7 @@
                         <li class="color1" v-if="course1">
                             <p class="course-title">course1</p>
                             <p>毛の長さ</p>
-                            <select v-model="course1Hair">
+                            <select>
                                 <option value="noselect">選択してください</option>
                                 <option value="0">短毛</option>
                                 <option value="1">長毛</option>
@@ -495,7 +495,7 @@
                         <li class="color2" v-if="course2">
                             <p class="course-title">course2</p>
                             <p>毛の長さ</p>
-                            <select v-model="course2Hair">
+                            <select>
                                 <option value="noselect">選択してください</option>
                                 <option value="0">短毛</option>
                             </select>
@@ -533,7 +533,7 @@
                     </ul>
                 </div>
                 <div class="sum">
-                    <h4 class="font-digital">合計<span>{{ price }}</span>円</h4>
+                    <h4 class="font-digital">合計<span>{{ price | number_format }}</span>円</h4>
                 </div>
             </div>
         </div>
