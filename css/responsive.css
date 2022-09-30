@@ -178,6 +178,47 @@
   .box-margin dl {
     display: none;
   }
+  /* 料金シミュレーション */
+  .simulation {
+    margin: 80px 0 40px 0;
+    padding: 60px 20px 20px;
+  }
+  .simulation h3,
+  .simulation .step h4,
+  .sum h4 {
+    width: 90%;
+  }
+  .simulation h3{
+    font-size: 18px;
+    padding: 10px;
+  }
+  .simulation .step h4 {
+    font-size: 16px;
+  }
+  .simulation .step1box,
+  .simulation .step2box {
+  flex-wrap: wrap;
+  }
+  .simulation .step1box li,
+  .simulation .step2box li {
+    width: 48%;
+    padding: 10px;
+    margin: 0 0 10px 0;
+  }
+  .simulation .step1box li {
+    padding: 10px 10px 60px 10px;
+  }
+  .simulation .step2box li {
+    margin: 40px 0 0 0;
+    text-align: left;
+  }
+  .simulation .step2box li p.course-title {
+    top: -35px;
+  }
+  .switch__content::before {
+    top: 0;
+  }
+  /* 料金シミュレーションここまで */
   .caution-box .box {
     width: 100%;
   }
