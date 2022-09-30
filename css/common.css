@@ -855,6 +855,21 @@ table.senior tr {
 }
 /* スイッチここまで */
 
+/* コース内容表示・非表示の動き */
+.course-enter-active {
+  transition: all .5s ease;
+}
+
+.course-leave-active {
+  transition: all .3s ease;
+  position: absolute;
+}
+
+.course-enter,
+.course-leave-to {
+  opacity: 0;
+}
+/* コース内容表示・非表示の動き ここまで */
 /* 料金シミュレーションここまで */
 
 .price .price-height {
