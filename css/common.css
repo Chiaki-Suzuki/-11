@@ -551,6 +551,272 @@ table.senior tr {
   padding: 4%;
 }
 
+/* 料金シミュレーション */
+.simulation {
+  position: relative;
+  background: #f8dcdc80;
+  padding: 60px 30px 30px;
+  margin: 40px 0 40px 0;
+  border-radius: 10px;
+}
+
+.simulation h3 {
+  position: absolute;
+  display: inline-block;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  padding: 10px 50px;
+  color: #fff;
+  background-color: #fda1ba;
+  box-sizing: border-box;
+}
+
+.simulation h3::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: 15px solid transparent;
+  border-right: 20px solid #c87f93;
+}
+.simulation h3::after {
+  position: absolute;
+  content: '';
+  top: -15px;
+  right: 0;
+  border: none;
+  border-top: 15px solid transparent;
+  border-left: 20px solid #c87f93;
+}
+
+.simulation .step {
+  margin: 40px 0 60px;
+}
+
+.simulation .step h4 {
+  margin: 10px auto;
+  font-size: 20px;
+  border-bottom: 1px dashed #976546;
+  width: 60%;
+}
+
+.simulation .step h4 span {
+  display: inline-block;
+  color: #976546;
+  margin: 0 10px 0 0;
+}
+
+.simulation .step h4::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 0;
+  background: url("../img/nikukyustep.png") 0 0 / cover no-repeat;
+  vertical-align: top;
+}
+
+.simulation .step1box,
+.simulation .step2box {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.simulation .step1box li,
+.simulation .step2box li {
+  position: relative;
+  width: 23%;
+  border: 3px solid #976546;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fbf5f2;
+}
+
+.simulation .step1box li {
+  padding: 10px 10px 60px 10px;
+}
+
+.simulation .step1box li p span {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #976546;
+  margin: 10px;
+}
+
+.simulation .step1box li p span::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #ff8181;
+  margin: 3px auto;
+}
+
+.simulation .step2box li {
+  margin: 40px 0 0 0;
+  text-align: left;
+}
+
+.simulation .step2box li p.course-title {
+  position: absolute;
+  top: -30px;
+  left: -3px;
+  padding: 0 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.simulation .step2box li select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 0 20px 0;
+}
+
+.simulation .step2box li p:not(.course-title) {
+  font-size: 14px;
+  font-weight: bold;
+  color: #976546;
+}
+
+.simulation .step2box li p:not(.course-title)::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #f7b9ca;
+  border-radius: 3px;
+  margin: 0 5px 0 0;
+}
+
+.sum h4 {
+  background: #fff;
+  margin: 0 auto 30px;
+  padding: 15px;
+  width: 40%;
+  border-radius: 50em;
+  border: 2px dashed #fda1ba;
+  outline: 8px solid #fff;
+}
+
+/* オプションチェック */
+.simulation .step2box li label {
+  cursor: pointer;
+  display: block;
+  border-radius: 5px;
+  padding: 5px;
+}
+.simulation .step2box li label:hover {
+  background-color: #fdd3dd61;
+}
+.simulation .step2box li label input[type="checkbox"] {
+  display: none;
+}
+.simulation .step2box li label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+  /* display: none; */
+  color: #c8c8c8;
+  display: inline;
+  vertical-align: sub;
+}
+.simulation .step2box li label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+  color: #976546;
+  display: inline;
+  vertical-align: sub;
+}
+/* オプションチェックここまで */
+
+/* スイッチ */
+.switch {
+  bottom: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.switch__label {
+	width: 80px;
+	position: relative;
+	display: inline-block;
+	padding-top: 3px;
+  cursor: pointer;
+}
+.switch__content {
+	display: block;
+  cursor: pointer;
+  position: relative;
+  border-radius: 50em;
+  height: 24px;
+  background-color: rgba(34,31,31,.26);
+	transition: all .1s .3s;
+	overflow: hidden;
+}
+
+.switch__content::before {
+  content: '不要';
+  position: absolute;
+  font-size: 13px;
+  color: #333;
+  top: 3px;
+}
+
+.switch__content:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 7px;
+	transition: all .3s;
+}
+.switch__input {
+	display: none;
+}
+.switch__circle {
+	display: block;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50em;
+	background-color: #F1F1F1;
+	transition: all .3s;
+	box-shadow: 0 2px 2px #ccc;
+}
+.switch__input:checked ~ .switch__circle {
+	left: 50px;
+	background-color: #ff8181;
+}
+.switch__input:checked ~ .switch__content {
+
+	border-color: transparent;
+	transition: all 0s;
+}
+
+.switch__input:checked ~ .switch__content:before {
+  content: '必要';
+  color: #fff;
+  z-index: 2;
+  left: 16px;
+  font-weight: bold;
+}
+
+.switch__input:checked ~ .switch__content:after {
+	background-color: #f5a9a9;
+	width: 100%;
+}
+/* スイッチここまで */
+
+/* 料金シミュレーションここまで */
+
 .price .price-height {
   padding-top: 15px;
   padding-right: 11%;
