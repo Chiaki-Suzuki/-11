@@ -1,0 +1,399 @@
+<template>
+  <section class="title5 clear-float">
+    <h2 class="mini-title font-digital">出張トリミング料金表</h2>
+    <p class="letterSpacing">PRICE</p>
+    <hr class="mini-hr" />
+    <div class="course-box">
+      <!-- シャンプー -->
+      <div class="course float-l">
+        <div class="course-title">
+          <img
+            class="course-img"
+            src="../assets/img/shampoo.png"
+            alt="シャンプー"
+            style="width: 11%;"
+          />
+          <p>
+            course 1
+            <br /><span class="font-digital">シャンプーコース</span>
+          </p>
+        </div>
+        <div class="box-margin">
+          <div class="overflow doing">
+            <div class="contents-box">
+              <p>
+                爪切り・肛門線・ブラッシング・コーミング・シャンプー・ブロー
+              </p>
+            </div>
+            <p class="plus">＋</p>
+            <div class="contents-box">
+              <p>
+                プロによる簡単なお手入れ方法レクチャー
+              </p>
+            </div>
+          </div>
+          <div class="explan clear-float">
+            被毛の状態や皮膚の状態を見極めた上でその子に最適な自然植物油100%手作り石鹸を選び施術します
+          </div>
+          <hr />
+          <dl class="overflow">
+            <dt class="float-l">毛の長さ</dt>
+            <dt class="float-l">体重</dt>
+          </dl>
+
+          <div class="price clear-float">
+            <p class="sp price-type">短毛</p>
+            <table>
+              <tr>
+                <td>短毛</td>
+                <td>3㎏以下</td>
+                <td>￥13,000~</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>4㎏~7kg以下</td>
+                <td>￥17,000~</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>7kg以下</td>
+                <td>￥20,000~</td>
+              </tr>
+            </table>
+          </div>
+          <div class="price">
+            <p class="sp price-type">長毛</p>
+            <table>
+              <tr>
+                <td class="">長毛</td>
+                <td>3㎏以下</td>
+                <td>￥13,000~</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>4㎏~7kg以下</td>
+                <td>￥17,000~</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>7kg以下</td>
+                <td>￥20,000~</td>
+              </tr>
+            </table>
+          </div>
+          <p class="sp">※kgは体重を表しております。</p>
+          <div class="price">
+            <p class="float-l">
+              <span>追加料金</span><br />抜け毛・毛玉処理
+            </p>
+            <p class="float-r price-height">￥3,000~￥10,000</p>
+          </div>
+        </div>
+      </div>
+      <!-- トリミングコース -->
+      <div class="course float-l">
+        <div class="course-title">
+          <img class="course-img" src="../assets/img/caesar.png" alt="ハサミ" />
+          <p>
+            course 2
+            <br /><span class="font-digital">トリミングコース</span>
+          </p>
+        </div>
+        <div class="box-margin">
+          <div class="overflow doing">
+            <div class="contents-box">
+              <p>
+                爪切り・肛門・耳掃除・ブラッシング・コーミング・カット・シャンプー・ブロー
+              </p>
+            </div>
+            <p class="plus">＋</p>
+            <div class="contents-box">
+              <p>
+                プロによる簡単なお手入れ方法レクチャー
+              </p>
+            </div>
+          </div>
+          <div class="explan clear-float">
+            毛玉の量や質により状態を見極め処理し、オーナー様とご相談しながらその子に適したカットします
+          </div>
+          <hr />
+          <dl class="overflow">
+            <dt class="float-l">毛の長さ</dt>
+            <dt class="float-l">体重</dt>
+          </dl>
+          <div class="price clear-float">
+            <p class="sp price-type">短毛</p>
+            <table>
+              <tr>
+                <td>短毛</td>
+                <td>3㎏以下</td>
+                <td>￥25,000~</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>4㎏~7kg以下</td>
+                <td>￥30,000~</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>7kg以下</td>
+                <td>￥35,000~</td>
+              </tr>
+            </table>
+          </div>
+          <p class="sp">※kgは体重を表しております。</p>
+          <div class="price">
+            <p class="float-l">
+              <span>追加料金</span><br />抜け毛・毛玉処理
+            </p>
+            <p class="float-r price-height">￥3,000~￥10,000</p>
+          </div>
+        </div>
+      </div>
+      <!-- シニアトリミング・グルーミングコース -->
+      <div class="course float-l">
+        <div class="course-title">
+          <img class="course-img" src="../assets/img/brush.png" alt="ブラシ" />
+          <p>
+            course 3
+            <br /><span class="font-digital"
+              >シニアトリミング・グルーミングコース</span
+            >
+          </p>
+        </div>
+        <div class="box-margin">
+          <div class="explan clear-float">
+            寝たきりや立っているのが困難なシニアさんはその状況を見て適した対応をさせていただきます。
+          </div>
+          <hr />
+          <dl class="overflow">
+            <dt class="float-l">メニュー</dt>
+          </dl>
+          <div class="price clear-float">
+            <table class="senior">
+              <tr>
+                <td>シャンプー・カットなし</td>
+                <td>￥10,000~￥20,000</td>
+              </tr>
+              <tr>
+                <td>シャンプー無し・カットあり</td>
+                <td>￥20,000~￥30,000</td>
+              </tr>
+              <tr>
+                <td>シニアわんトリミング<br />シャンプー＆カット</td>
+                <td>￥15,000~￥30,000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- 麻酔無しで行う『困ったにゃん』コース -->
+      <div class="course float-l">
+        <div class="course-title">
+          <img class="course-img" src="../assets/img/nikukyu.png" alt="肉球" />
+          <p>
+            course 4
+            <br /><span class="font-digital"
+              >麻酔無しで行う『困ったにゃん』コース</span
+            >
+          </p>
+        </div>
+        <div class="box-margin">
+          <div class="explan clear-float">
+            どんな子も今まで出来なかった子はいません！悩んでないで一度ご相談ください
+          </div>
+          <ul>
+            <li>凶暴でどこからも断られてしまう</li>
+            <li>麻酔をかけないとできない</li>
+            <li>麻酔は負担がかかりすぎるから麻酔無しでしたい</li>
+          </ul>
+          <hr />
+          <div class="price">
+            <p class="float-l">
+              <span>各コース価格に別途追加料金になります</span>
+            </p>
+            <p class="float-r">￥10,000~￥20,000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 料金シミュレーション -->
+    <div id="app">
+        <div class="simulation">
+            <h3 class="font-digital">料金シミュレーション</h3>
+            <p>ご希望の内容をお選びください。</p>
+            <div class="step">
+                <h4 class="font-digital"><span>STEP1</span>コース選択</h4>
+                <p>必要なコースを選択してください。</p>
+                <ul class="step1box">
+                    <li>
+                        <p><span>course1</span>シャンプーコース</p>
+                        <div class="switch">
+                            <label for="s1" class="switch__label">
+                                <input type="checkbox"
+                                    id="s1"
+                                    class="switch__input"
+                                    v-model="course1">
+                                <span class="switch__content"></span>
+                                <span class="switch__circle"></span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <p><span>course2</span>トリミングコース</p>
+                        <div class="switch">
+                            <label for="s2" class="switch__label">
+                                <input type="checkbox"
+                                    id="s2"
+                                    class="switch__input"
+                                    v-model="course2">
+                                <span class="switch__content"></span>
+                                <span class="switch__circle"></span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <p><span>course3</span>シニアトリミング・<br>グルーミングコース</p>
+                        <div class="switch">
+                            <label for="s3" class="switch__label">
+                                <input type="checkbox"
+                                    id="s3"
+                                    class="switch__input"
+                                    v-model="course3">
+                                <span class="switch__content"></span>
+                                <span class="switch__circle"></span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <p><span>course4</span>麻酔無しで行う<br>『困ったにゃん』コース</p>
+                        <div class="switch">
+                            <label for="s4" class="switch__label">
+                                <input type="checkbox"
+                                    id="s4"
+                                    class="switch__input"
+                                    v-model="course4">
+                                <span class="switch__content"></span>
+                                <span class="switch__circle"></span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="step">
+                <h4 class="font-digital"><span>STEP2</span>情報入力</h4>
+                <p>猫ちゃんの状態や追加オプションを選択してください。</p>
+                <ul class="step2box">
+                    <transition name="course">
+                        <li class="color1" v-if="course1">
+                            <p class="course-title">course1</p>
+                            <p>毛の長さ</p>
+                            <select>
+                                <option value="noselect">選択してください</option>
+                                <option value="0">短毛</option>
+                                <option value="1">長毛</option>
+                            </select>
+                            <p>体重</p>
+                            <select v-model="course1weight" @change="totalPrice">
+                                <option value="noselect">選択してください</option>
+                                <option value="0">3kg以下</option>
+                                <option value="1">4kg~7kg以下</option>
+                                <option value="2">7kg以上</option>
+                            </select>
+                            <p>オプション追加</p>
+                            <label class="btn active" for="o1">
+                                <input id="o1" type="checkbox" v-model="course1Option" @change="totalPrice"><i class="fa fa-check-square-o fa-2x"></i>
+                                <span>抜け毛・毛玉処理</span>
+                            </label>
+                        </li>
+                    </transition>
+                    <transition name="course">
+                        <li class="color2" v-if="course2">
+                            <p class="course-title">course2</p>
+                            <p>毛の長さ</p>
+                            <select>
+                                <option value="noselect">選択してください</option>
+                                <option value="0">短毛</option>
+                            </select>
+                            <p>体重</p>
+                            <select v-model="course2weight" @change="totalPrice">
+                                <option value="noselect">選択してください</option>
+                                <option value="0">3kg以下</option>
+                                <option value="1">4kg~7kg以下</option>
+                                <option value="2">7kg以上</option>
+                            </select>
+                            <p>オプション追加</p>
+                            <label class="btn active" for="o2">
+                                <input id="o2" type="checkbox" v-model="course2Option" @change="totalPrice"><i class="fa fa-check-square-o fa-2x"></i>
+                                <span>抜け毛・毛玉処理</span>
+                            </label>
+                        </li>
+                    </transition>
+                    <transition name="course">
+                        <li class="color3" v-if="course3">
+                            <p class="course-title">course3</p>
+                            <p>メニュー</p>
+                            <select v-model="course3menu" @change="totalPrice">
+                                <option value="noselect">選択してください</option>
+                                <option value="0">シャンプー・カットなし</option>
+                                <option value="1">シャンプー無し・カットあり</option>
+                                <option value="2">シニアわんトリミング シャンプー＆カット</option>
+                            </select>
+                        </li>
+                    </transition>
+                    <transition name="course">
+                        <li class="color4" v-if="course4">
+                            <p class="course-title">course4</p>
+                            <p>オプション追加</p>
+                            <label class="btn active" for="o4">
+                                <input id="o4" type="checkbox" v-model="course4Option" @change="totalPrice"><i class="fa fa-check-square-o fa-2x"></i>
+                                <span>『困ったにゃん』コース</span>
+                            </label>
+                        </li>
+                    </transition>
+                </ul>
+            </div>
+            <div class="sum">
+                <h4 class="font-digital">合計<span>{{ price | number_format }}</span>円 ～</h4>
+            </div>
+        </div>
+    </div>
+    <!-- 注意事項 -->
+    <div class="course caution-box clear-float">
+      <div class="box-margin">
+        <div class="float-l box">
+          <h1 class="caution">お詫び</h1>
+          <p>
+            爪切りだけの出張はしておりません。<br />
+            『トリミングコース』か『シャンプーコース』に爪切りが含まれており、お手入れの仕方などお伝えしておりますので、どちらかのコースをご依頼ください。各コースにはオーナー様自身でお手入れできるよう、簡単なお手入れ方法＝正しいブラッシング・爪切りのやり方・抱き方のポイントなどをレクチャーしております。<br />
+            何卒ご理解頂ければ幸いです。
+          </p>
+        </div>
+        <div class="float-r box">
+          <h1 class="caution">男性の方お問い合わせについて</h1>
+          <ul>
+            <li>★男性お一人住まいの男性</li>
+            <li>★アニマルケアサロン・フローラの患者様ではない男性</li>
+            <li>★一度も面識のない男性</li>
+            <li>★知人からの紹介ではない男性</li>
+          </ul>
+          <p class="clear-float">
+            上記内容の方は
+            出張スタイルではなくアニマルケアサロン・フローラ（港区南青山）にて施術をさせて頂いております。<br />
+            女性スタッフのため、何卒ご理解下さいますよう宜しくお願い致します。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: 'Price',
+}
+</script>
+
+<style>
+
+</style>
