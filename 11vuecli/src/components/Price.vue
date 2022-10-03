@@ -260,5 +260,275 @@ export default {
 </script>
 
 <style>
+/* 出張トリミング */
+.title5 {
+  background-image: url(../assets/img/silhouette.png), url(../assets/img/back1.png);
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.mini-title {
+  margin: 60px 0 10px;
+  font-size: 3vw;
+}
+.mini-hr {
+  width: 50px;
+  margin-bottom: 5%;
+}
 
+
+.course-img {
+  float: left;
+  margin: -5% 0 0px 3%;
+  width: 17%;
+}
+.course-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.course {
+  background: #fff;
+  border: solid 3px #976546;
+  border-radius: 10px;
+  width: 46.9%;
+  margin-right: 4%;
+  margin-bottom: 6%;
+}
+.doing {
+  display: flex;
+}
+
+.course-title {
+  color: #fff;
+  background: #976546;
+  border: solid 3px #976546;
+}
+.course-title p {
+  margin-top: 2%;
+  padding-right: 13%;
+  font-size: 1.3vw;
+}
+.course-title p span {
+  font-size: 2vw;
+}
+.box-margin {
+  margin: 44px 37px;
+  overflow: hidden;
+  text-align: left;
+}
+.contents-box {
+  font-weight: bold;
+  font-size: 1vw;
+  color: #c59863;
+  background: #fff9e1;
+  border: solid 3px #c59863;
+  border-radius: 10px;
+  width: 38%;
+  height: 80px;
+  padding: 2%;
+  text-align: center;
+  line-height: 1.6;
+  display: flex;
+}
+.contents-box p {
+  flex: 0 1 auto;
+  margin: auto;
+}
+
+.plus {
+  text-align: center;
+  margin: 8% 6% 0;
+}
+
+.title5 dl dt:nth-of-type(1) {
+  margin: 0 23% 0 4%;
+}
+
+.course:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+.title5 .explan {
+  text-align: left;
+  margin: 30px 0;
+}
+
+.box-margin hr {
+  color: #dedede;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+table td:nth-of-type(1) {
+  border-bottom: none;
+}
+table th,
+table td {
+  border-bottom: solid 1px #e1e1e1;
+  text-align: center;
+  width: 25%;
+  padding: 15px 0 15px 25px;
+  text-align: left;
+}
+
+table tr:last-of-type td {
+  border-bottom: none;
+}
+
+table.senior tr {
+  border-bottom: solid 1px #e1e1e1;
+}
+
+.price {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding-right: 20px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.price p span {
+  color: #ff0a0a;
+}
+.price:last-of-type {
+  margin: 0;
+  padding: 4%;
+}
+
+.price .price-height {
+  padding-top: 15px;
+  padding-right: 11%;
+}
+.caution-box {
+  width: 100%;
+  border: none;
+  box-shadow: 2px 2px 4px #dcdada;
+}
+.caution-box .box-margin {
+  margin: 0;
+  padding: 35px;
+}
+.caution-box .box {
+  width: 49%;
+}
+.caution-box .box p,
+.caution-box .box ul {
+  margin-top: 2%;
+}
+.caution-box .box ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 64px;
+}
+.caution-box .box ul li:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
+.caution {
+  border-bottom: solid 1px #936244;
+  font-size: 1.5vw;
+  color: #494949; /*文字色*/
+  background: transparent; /*背景透明に*/
+  border-left: solid 20px #936244; /*左線*/
+  font-weight: unset;
+  padding-left: 10px;
+}
+@media (max-width: 1470px) {
+  .caution-box .box ul {
+    display: unset;
+  }
+}
+/*-------------------------
+  sp
+-------------------------*/
+@media (max-width: 768px) {
+/* 出張トリミング */
+  .title5 {
+    background-image: url(../assets/img/movecat2.png), url(../assets/img/back1.png);
+    background-repeat: no-repeat, repeat;
+    background-size: 35%;
+    background-position: 47% 0%;
+  }
+  .mini-title {
+    margin: 3% 0 10px;
+    font-size: 5vw;
+  }
+  .mini-title img {
+    width: 100%;
+  }
+  .course-box {
+    display: unset;
+  }
+  .course {
+    width: auto;
+    margin-right: 0;
+  }
+  .course-title p {
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+  .box-margin {
+    margin: 44px 10px;
+  }
+  .doing {
+    display: unset;
+  }
+  .contents-box {
+    width: 94%;
+    font-size: 16px;
+  }
+  .plus {
+    margin: 5% 6%;
+    font-size: 30px;
+  }
+  .title5 dl dt {
+    float: left;
+  }
+  .price p {
+    text-align: center;
+  }
+  .price .price-height {
+    padding-right: 0;
+  }
+  table th,
+  table td {
+    width: 0%;
+  }
+  table tr:first-of-type td {
+    display: none;
+  }
+  .box-margin dl {
+    display: none;
+  }
+
+  .caution-box .box {
+    width: 100%;
+  }
+  .caution-box .box p,
+  .caution-box .box ul {
+    margin-left: 7%;
+    margin-bottom: 30px;
+  }
+  .caution {
+    font-size: large;
+    font-weight: bold;
+    border-left: solid 5px #936244;
+  }
+  .caution-box .box ul {
+    display: inline;
+  }
+  .price-type {
+  font-weight: bolder;
+  background-color: bisque;
+  width: 106%;
+  padding: 8px;
+}
+}
 </style>

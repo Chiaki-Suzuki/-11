@@ -72,5 +72,103 @@ export default {
 </script>
 
 <style>
+/* お客様の声 */
 
+.title6 {
+  background-image: url(../assets/img/whiteback.png);
+  background-size: contain;
+  padding-bottom: 6%;
+}
+.customer {
+  width: 45%;
+  margin: 3% 7% 4% 0;
+  text-align: left;
+}
+.customer:nth-child(odd) {
+  margin-right: 0;
+}
+
+.title6 .waku1 {
+  position: absolute;
+  left: 3%;
+  width: 47%;
+}
+.title6 .waku2 {
+  position: absolute;
+  left: 52%;
+  width: 47%;
+}
+.custemers-interview {
+  width: 60%;
+  font-size: 1.2vw;
+}
+
+p.dotted-bottom {
+  border-bottom: dotted 4px #a98169;
+  margin-bottom: 3%;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.questionnaire {
+  padding: 9% 0% 0 6%;
+  overflow: hidden;
+}
+.cat-picture {
+  padding-right: 10px;
+  width: 36%;
+}
+.btn-flat-border {
+  display: inline-block;
+  padding: 8px 95px;
+  text-decoration: none;
+  border: solid 2px #936244;
+  border-radius: 6px;
+  color: #494949;
+  transition: 0.4s;
+  margin: 3% auto;
+}
+
+.btn-flat-border:hover {
+  background: #936244;
+  color: white;
+}
+/*-------------------------
+  sp
+-------------------------*/
+@media (max-width: 768px) {
+/* お客様の声 */
+  .title6 {
+    background-size: 465%;
+    padding-top: 30%;
+  }
+  .customer {
+    width: 100%;
+    margin: 17% 7% 4% 0;
+    text-align: center;
+  }
+  .customer img {
+    height: 38%;
+  }
+  .title6 .waku1 {
+    width: 97%;
+    height: 24rem;
+  }
+  .cat-picture {
+    width: 240px;
+  }
+  .custemers-interview {
+    font-size: unset;
+    width: 90%;
+    margin: auto;
+  }
+  .title6 .waku2 {
+    left: 3%;
+    width: 97%;
+    height: 24rem;
+  }
+  .questionnaire {
+    padding: 6% 7% 0 4%;
+  }
+}
 </style>
