@@ -20,6 +20,7 @@ module.exports = {
     'arrow-parens': 'off',
     'brace-style': 'off',
     'comma-dangle': 'off',
+    'comma-spacing': 'off',
     'indent': 'off',
     'key-spacing': 'off',
     'linebreak-style': 'off',
